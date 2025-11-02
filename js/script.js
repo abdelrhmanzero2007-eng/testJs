@@ -41,7 +41,7 @@ if (Q == true) {
       break;
   }
 } else if (Q == false) {
-  let city = prompt("Enter yuorcity ");
+  let city = prompt(" من اين انت ");
 
   let desqutn = "10%";
 
