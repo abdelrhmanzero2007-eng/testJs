@@ -7,59 +7,78 @@ if (Q == true) {
   switch (true) {
     case degree < 0 || degree > 100:
       console.log(" Enter Tha true number");
+      document.write(" Enter Tha true number");
       break;
 
     case degree < 50:
-      console.log("FFF");
+      console.log("FFF تقديرك هو");
+      document.write("FFF تقديرك هو");
       break;
     case degree >= 50 && degree < 60:
-      console.log("F");
+      console.log("F تقديرك هو");
+      document.write("F تقديرك هو");
       break;
 
     case degree >= 60 && degree < 70:
-      console.log("E");
+      console.log("E تقديرك هو");
+      document.write("E تقديرك هو");
       break;
 
     case degree >= 70 && degree < 80:
-      console.log("C");
+      console.log("C تقديرك هو");
+      document.write("C تقديرك هو");
       break;
 
     case degree >= 80 && degree < 90:
-      console.log("A");
+      console.log("A تقديرك هو");
+      document.write("A تقديرك هو");
       break;
-
     case degree >= 90 && degree < 99:
-      console.log("A+");
+      console.log("A+ تقديرك هو");
+      document.write("  A+ تقديرك هو");
       break;
     case degree == 100:
-      console.log("Xlans");
+      console.log("Xlans تقديرك هو");
+      document.write("Xlans تقديرك هو");
       break;
 
     default:
       console.log("Enter a Number");
+      document.write("Enter a Number");
 
       break;
   }
 } else if (Q == false) {
   let city = prompt(" من اين انت ");
 
-  let desqutn = "10%";
+  let desqutn = "سوف تحصل علي خصم %10";
 
   switch (city) {
     case "cairo":
-      desqutn = " 20%";
+      desqutn = "سوف تحصل علي خصم %20";
       console.log(desqutn);
+      document.write(desqutn);
 
       break;
     case "Fayom":
-    case "bane syef":
-      desqutn = " 40%";
+    case "bane swyef":
+      desqutn = "سوف تحصل علي خصم %40";
       console.log(desqutn);
+      document.write(desqutn);
 
       break;
 
+      case "Tanta":
+        desqutn = "سوف تحصل علي خصم %60";
+        console.log(desqutn);
+        document.write(desqutn);
+  
+        break;
+
+
     default:
       console.log(desqutn);
+      document.write(desqutn);
 
       break;
   }
