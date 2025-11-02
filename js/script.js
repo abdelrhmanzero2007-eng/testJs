@@ -1,14 +1,19 @@
 let Q = confirm(" هل تريد حساب درجات؟  ");
 
 if (Q == true) {
-  let degree = +prompt("ادخل درجتك يا نجم:");
+  let degree = +prompt("ادخل درجتك");
 
   let result;
   switch (true) {
-    case degree < 0 || degree > 100:
-      console.log(" Enter Tha true number");
-      document.write(" Enter Tha true number");
+    case  degree > 100:
+      console.log(" يا اسطي ما انت مش هتبقي ناصح عليا");
+      document.write(" يا اسطي ما انت مش هتبقي ناصح عليا");
       break;
+
+      case degree < 0 :
+        console.log("يا اسطي ماتهزرش");
+        document.write("يا اسطي ماتهزرش");
+        break;
 
     case degree < 50:
       console.log("FFF تقديرك هو");
@@ -49,7 +54,7 @@ if (Q == true) {
       break;
   }
 } else if (Q == false) {
-  let city = prompt(" من اين انت ");
+  let city = prompt("  من اين انت لحساب تخفيضاتك ");
 
   let desqutn = "سوف تحصل علي خصم %10";
 
